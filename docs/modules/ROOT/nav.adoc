@@ -1,0 +1,4 @@
+* xref:index.adoc[Welcome]
+.Openapi Examples
+* xref:api-with-examples.adoc[api-with-examples]
+* xref:petstore.adoc[petstore]

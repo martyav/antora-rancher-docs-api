@@ -1,5 +1,9 @@
 # Welcome to this example
 
+The openapi sources comes from <https://github.com/OAI/OpenAPI-Specification/tree/main/examples/v3.0>.
+
 Select an api to display:
 
 - xref:api-with-examples.adoc[api-with-examples]
+- xref:petstore.adoc[petstore]
+

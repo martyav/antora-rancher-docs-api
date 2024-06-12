@@ -1,5 +1,5 @@
 name: antora-openapi-example
-title: Openapi example
+title: Openapi Example
 version: master
 nav:
   - modules/ROOT/nav.adoc
