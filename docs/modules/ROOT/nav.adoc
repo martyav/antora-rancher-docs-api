@@ -1,4 +1,7 @@
 * xref:index.adoc[Welcome]
-.Openapi Examples
-* xref:api-with-examples.adoc[api-with-examples]
-* xref:petstore.adoc[petstore]
+.Swagger2Markup Examples
+* xref:overview.adoc[Overview]
+* xref:definitions.adoc[Definitions]
+* xref:paths.adoc[Paths]
+* xref:security.adoc[Security]
+* xref:combined-api-pages.adoc[Combined API Pages]

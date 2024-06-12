@@ -1,0 +1,3484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: Antora OpenAPI Example</title>
+    <meta name="generator" content="Antora 3.1.7">
+<link rel="stylesheet" href="../_/css/site.css">
+<link rel="stylesheet" href="../_/css/style.css">  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="..">Antora OpenAPI Example</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Products</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Services</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="antora-openapi-example" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="index.html">Openapi Example</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Welcome</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="definitions.html">definitions</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="paths.html">paths</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="overview.html">overview</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="security.html">security</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Openapi Example</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="index.html">Openapi Example</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Openapi Example</a></li>
+    <li><a href="definitions.html">definitions</a></li>
+  </ul>
+</nav>
+<div class="edit-this-page"><a href="file:///Users/ssingh/Features/Rancher/current/antora-rancher-docs-api/docs/modules/ROOT/pages/definitions.adoc">Edit this Page</a></div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_definitions"><a class="anchor" href="#_definitions"></a>Definitions</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_io_cattle_management_v3_clusterroletemplatebinding"><a class="anchor" href="#_io_cattle_management_v3_clusterroletemplatebinding"></a>io.cattle.management.v3.ClusterRoleTemplateBinding</h3>
+<div class="paragraph">
+<p>ClusterRoleTemplateBinding is the object representing membership of a subject in a cluster with permissions specified by a given role template.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>clusterName</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ClusterName is the metadata.name of the cluster to which a subject is added. Must match the namespace. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>groupName</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>GroupName is the name of the group subject added to the cluster. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>groupPrincipalName</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>GroupPrincipalName is the name of the group principal subject added to the cluster. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>metadata</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Standard object&#8217;s metadata. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_objectmeta">io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>roleTemplateName</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>RoleTemplateName is the name of the role template that defines permissions to perform actions on resources in the cluster. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>userName</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>UserName is the name of the user subject added to the cluster. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>userPrincipalName</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>UserPrincipalName is the name of the user principal subject added to the cluster. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_cattle_management_v3_clusterroletemplatebindinglist"><a class="anchor" href="#_io_cattle_management_v3_clusterroletemplatebindinglist"></a>io.cattle.management.v3.ClusterRoleTemplateBindingList</h3>
+<div class="paragraph">
+<p>ClusterRoleTemplateBindingList is a list of ClusterRoleTemplateBinding</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>items</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>List of clusterroletemplatebindings. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; <a href="#_io_cattle_management_v3_clusterroletemplatebinding">io.cattle.management.v3.ClusterRoleTemplateBinding</a> &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>metadata</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Standard list metadata. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_listmeta">io.k8s.apimachinery.pkg.apis.meta.v1.ListMeta</a></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_cattle_management_v3_globalrole"><a class="anchor" href="#_io_cattle_management_v3_globalrole"></a>io.cattle.management.v3.GlobalRole</h3>
+<div class="paragraph">
+<p>GlobalRole defines rules that can be applied to the local cluster and or every downstream cluster.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>builtin</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Builtin specifies that this GlobalRole was created by Rancher if true. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>boolean</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>description</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Description holds text that describes the resource.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>displayName</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>DisplayName is the human-readable name displayed in the UI for this resource.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>inheritedClusterRoles</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>InheritedClusterRoles are the names of RoleTemplates whose permissions are granted by this GlobalRole in every cluster besides the local cluster. To grant permissions in the local cluster, use the Rules field.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>metadata</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Standard object&#8217;s metadata. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_objectmeta">io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>newUserDefault</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>NewUserDefault specifies that all new users created should be bound to this GlobalRole if true.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>boolean</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>rules</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Rules holds a list of PolicyRules that are applied to the local cluster only.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; <a href="#_io_cattle_management_v3_globalrole_rules">rules</a> &gt; array</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div id="_io_cattle_management_v3_globalrole_rules" class="paragraph">
+<p><strong>rules</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiGroups</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIGroups is the name of the APIGroup that contains the resources. If multiple API groups are specified, any action requested against one of the enumerated resources in any API group will be allowed. &quot;" represents the core API group and "*&quot; represents all API groups.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>nonResourceURLs</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>NonResourceURLs is a set of partial urls that a user should have access to. *s are allowed, but only as the full, final step in the path Since non-resource URLs are not namespaced, this field is only applicable for ClusterRoles referenced from a ClusterRoleBinding. Rules can either apply to API resources (such as "pods" or "secrets") or non-resource URL paths (such as "/api"), but not both.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>resourceNames</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ResourceNames is an optional white list of names that the rule applies to. An empty set means that everything is allowed.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>resources</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Resources is a list of resources this rule applies to. '*' represents all resources.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>verbs</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Verbs is a list of Verbs that apply to ALL the ResourceKinds contained in this rule. '*' represents all verbs.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string &gt; array</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_cattle_management_v3_globalrolebinding"><a class="anchor" href="#_io_cattle_management_v3_globalrolebinding"></a>io.cattle.management.v3.GlobalRoleBinding</h3>
+<div class="paragraph">
+<p>GlobalRoleBinding binds a given subject user or group to a GlobalRole.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>globalRoleName</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>GlobalRoleName is the name of the Global Role that the subject will be bound to. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>groupPrincipalName</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>GroupPrincipalName is the name of the group principal subject to be bound. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>metadata</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Standard object&#8217;s metadata. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_objectmeta">io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>userName</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>UserName is the name of the user subject to be bound. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_cattle_management_v3_globalrolebindinglist"><a class="anchor" href="#_io_cattle_management_v3_globalrolebindinglist"></a>io.cattle.management.v3.GlobalRoleBindingList</h3>
+<div class="paragraph">
+<p>GlobalRoleBindingList is a list of GlobalRoleBinding</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>items</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>List of globalrolebindings. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; <a href="#_io_cattle_management_v3_globalrolebinding">io.cattle.management.v3.GlobalRoleBinding</a> &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>metadata</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Standard list metadata. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_listmeta">io.k8s.apimachinery.pkg.apis.meta.v1.ListMeta</a></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_cattle_management_v3_globalrolelist"><a class="anchor" href="#_io_cattle_management_v3_globalrolelist"></a>io.cattle.management.v3.GlobalRoleList</h3>
+<div class="paragraph">
+<p>GlobalRoleList is a list of GlobalRole</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>items</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>List of globalroles. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; <a href="#_io_cattle_management_v3_globalrole">io.cattle.management.v3.GlobalRole</a> &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>metadata</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Standard list metadata. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_listmeta">io.k8s.apimachinery.pkg.apis.meta.v1.ListMeta</a></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_cattle_management_v3_project"><a class="anchor" href="#_io_cattle_management_v3_project"></a>io.cattle.management.v3.Project</h3>
+<div class="paragraph">
+<p>Project is a group of namespaces. Projects are used to create a multi-tenant environment within a Kubernetes cluster by managing namespace operations, such as role assignments or quotas, as a group.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>metadata</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Standard object&#8217;s metadata. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_objectmeta">io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>spec</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Spec is the specification of the desired configuration for the project.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_cattle_management_v3_project_spec">spec</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>status</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Status is the most recently observed status of the project.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_cattle_management_v3_project_status">status</a></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div id="_io_cattle_management_v3_project_spec" class="paragraph">
+<p><strong>spec</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>clusterName</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ClusterName is the name of the cluster the project belongs to. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>containerDefaultResourceLimit</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ContainerDefaultResourceLimit is a specification for the default LimitRange for the namespace. See <a href="https://kubernetes.io/docs/concepts/policy/limit-range/" class="bare">https://kubernetes.io/docs/concepts/policy/limit-range/</a> for more details.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_cattle_management_v3_project_containerdefaultresourcelimit">containerDefaultResourceLimit</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>description</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Description is a human-readable description of the project.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>displayName</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>DisplayName is the human-readable name for the project.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>enableProjectMonitoring</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>EnableProjectMonitoring indicates whether Monitoring V1 should be enabled for this project. Deprecated. Use the Monitoring V2 app instead. Defaults to false.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>boolean</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>namespaceDefaultResourceQuota</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>NamespaceDefaultResourceQuota is a specification of the default ResourceQuota that a namespace will receive if none is provided. Must provide ResourceQuota if NamespaceDefaultResourceQuota is specified. See <a href="https://kubernetes.io/docs/concepts/policy/resource-quotas/" class="bare">https://kubernetes.io/docs/concepts/policy/resource-quotas/</a> for more details.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_cattle_management_v3_project_namespacedefaultresourcequota">namespaceDefaultResourceQuota</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>resourceQuota</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ResourceQuota is a specification for the total amount of quota for standard resources that will be shared by all namespaces in the project. Must provide NamespaceDefaultResourceQuota if ResourceQuota is specified. See <a href="https://kubernetes.io/docs/concepts/policy/resource-quotas/" class="bare">https://kubernetes.io/docs/concepts/policy/resource-quotas/</a> for more details.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_cattle_management_v3_project_resourcequota">resourceQuota</a></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div id="_io_cattle_management_v3_project_containerdefaultresourcelimit" class="paragraph">
+<p><strong>containerDefaultResourceLimit</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>limitsCpu</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>LimitsCPU is the CPU limits across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>limitsMemory</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>LimitsMemory is the memory limits across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>requestsCpu</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>RequestsCPU is the CPU requests limit across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>requestsMemory</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>RequestsMemory is the memory requests limit across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div id="_io_cattle_management_v3_project_namespacedefaultresourcequota" class="paragraph">
+<p><strong>namespaceDefaultResourceQuota</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>limit</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Limit is the default quota limits applied to new namespaces.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_cattle_management_v3_project_namespacedefaultresourcequota_limit">limit</a></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div id="_io_cattle_management_v3_project_namespacedefaultresourcequota_limit" class="paragraph">
+<p><strong>limit</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>configMaps</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ConfigMaps is the total number of ReplicationControllers that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>limitsCpu</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>LimitsCPU is the CPU limits across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>limitsMemory</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>LimitsMemory is the memory limits across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>persistentVolumeClaims</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>PersistentVolumeClaims is the total number of PersistentVolumeClaims that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>pods</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Pods is the total number of Pods in a non-terminal state that can exist in the namespace. A pod is in a terminal state if .status.phase in (Failed, Succeeded) is true.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>replicationControllers</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ReplicationControllers is total number of ReplicationControllers that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>requestsCpu</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>RequestsCPU is the CPU requests limit across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>requestsMemory</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>RequestsMemory is the memory requests limit across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>requestsStorage</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>RequestsStorage is the storage requests limit across all persistent volume claims.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>secrets</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Secrets is the total number of ReplicationControllers that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>services</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Services is the total number of Services that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>servicesLoadBalancers</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ServicesLoadBalancers is the total number of Services of type LoadBalancer that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>servicesNodePorts</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ServiceNodePorts is the total number of Services of type NodePort that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div id="_io_cattle_management_v3_project_resourcequota" class="paragraph">
+<p><strong>resourceQuota</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>limit</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Limit is the total allowable quota limits shared by all namespaces in the project.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_cattle_management_v3_project_resourcequota_limit">limit</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>usedLimit</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>UsedLimit is the currently allocated quota for all namespaces in the project.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_cattle_management_v3_project_resourcequota_usedlimit">usedLimit</a></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div id="_io_cattle_management_v3_project_resourcequota_limit" class="paragraph">
+<p><strong>limit</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>configMaps</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ConfigMaps is the total number of ReplicationControllers that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>limitsCpu</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>LimitsCPU is the CPU limits across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>limitsMemory</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>LimitsMemory is the memory limits across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>persistentVolumeClaims</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>PersistentVolumeClaims is the total number of PersistentVolumeClaims that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>pods</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Pods is the total number of Pods in a non-terminal state that can exist in the namespace. A pod is in a terminal state if .status.phase in (Failed, Succeeded) is true.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>replicationControllers</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ReplicationControllers is total number of ReplicationControllers that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>requestsCpu</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>RequestsCPU is the CPU requests limit across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>requestsMemory</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>RequestsMemory is the memory requests limit across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>requestsStorage</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>RequestsStorage is the storage requests limit across all persistent volume claims.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>secrets</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Secrets is the total number of ReplicationControllers that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>services</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Services is the total number of Services that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>servicesLoadBalancers</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ServicesLoadBalancers is the total number of Services of type LoadBalancer that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>servicesNodePorts</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ServiceNodePorts is the total number of Services of type NodePort that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div id="_io_cattle_management_v3_project_resourcequota_usedlimit" class="paragraph">
+<p><strong>usedLimit</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>configMaps</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ConfigMaps is the total number of ReplicationControllers that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>limitsCpu</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>LimitsCPU is the CPU limits across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>limitsMemory</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>LimitsMemory is the memory limits across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>persistentVolumeClaims</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>PersistentVolumeClaims is the total number of PersistentVolumeClaims that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>pods</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Pods is the total number of Pods in a non-terminal state that can exist in the namespace. A pod is in a terminal state if .status.phase in (Failed, Succeeded) is true.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>replicationControllers</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ReplicationControllers is total number of ReplicationControllers that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>requestsCpu</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>RequestsCPU is the CPU requests limit across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>requestsMemory</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>RequestsMemory is the memory requests limit across all pods in a non-terminal state.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>requestsStorage</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>RequestsStorage is the storage requests limit across all persistent volume claims.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>secrets</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Secrets is the total number of ReplicationControllers that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>services</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Services is the total number of Services that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>servicesLoadBalancers</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ServicesLoadBalancers is the total number of Services of type LoadBalancer that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>servicesNodePorts</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ServiceNodePorts is the total number of Services of type NodePort that can exist in the namespace.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div id="_io_cattle_management_v3_project_status" class="paragraph">
+<p><strong>status</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>conditions</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Conditions are a set of indicators about aspects of the project.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; <a href="#_io_cattle_management_v3_project_conditions">conditions</a> &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>monitoringStatus</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>MonitoringStatus is the status of the Monitoring V1 app.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_cattle_management_v3_project_monitoringstatus">monitoringStatus</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>podSecurityPolicyTemplateId</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>PodSecurityPolicyTemplateName is the pod security policy template associated with the project.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div id="_io_cattle_management_v3_project_conditions" class="paragraph">
+<p><strong>conditions</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>lastTransitionTime</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Last time the condition transitioned from one status to another.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>lastUpdateTime</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>The last time this condition was updated.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>message</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Human-readable message indicating details about last transition.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>reason</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>The reason for the condition&#8217;s last transition.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>status</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Status of the condition, one of True, False, Unknown.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>type</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Type of project condition.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div id="_io_cattle_management_v3_project_monitoringstatus" class="paragraph">
+<p><strong>monitoringStatus</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 42.8571%;">
+<col style="width: 57.1429%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>conditions</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; <a href="#_io_cattle_management_v3_project_monitoringstatus_conditions">conditions</a> &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>grafanaEndpoint</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div id="_io_cattle_management_v3_project_monitoringstatus_conditions" class="paragraph">
+<p><strong>conditions</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>lastTransitionTime</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Last time the condition transitioned from one status to another.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>lastUpdateTime</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>The last time this condition was updated.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>message</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Human-readable message indicating details about last transition</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>reason</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>The reason for the condition&#8217;s last transition.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>status</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Status of the condition, one of True, False, Unknown.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>type</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Type of cluster condition.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_cattle_management_v3_projectlist"><a class="anchor" href="#_io_cattle_management_v3_projectlist"></a>io.cattle.management.v3.ProjectList</h3>
+<div class="paragraph">
+<p>ProjectList is a list of Project</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>items</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>List of projects. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; <a href="#_io_cattle_management_v3_project">io.cattle.management.v3.Project</a> &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>metadata</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Standard list metadata. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_listmeta">io.k8s.apimachinery.pkg.apis.meta.v1.ListMeta</a></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_cattle_management_v3_projectroletemplatebinding"><a class="anchor" href="#_io_cattle_management_v3_projectroletemplatebinding"></a>io.cattle.management.v3.ProjectRoleTemplateBinding</h3>
+<div class="paragraph">
+<p>ProjectRoleTemplateBinding is the object representing membership of a subject in a project with permissions specified by a given role template.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>groupName</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>GroupName is the name of the group subject added to the project. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>groupPrincipalName</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>GroupPrincipalName is the name of the group principal subject added to the project. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>metadata</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Standard object&#8217;s metadata. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_objectmeta">io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>projectName</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ProjectName is the name of the project to which a subject is added. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>roleTemplateName</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>RoleTemplateName is the name of the role template that defines permissions to perform actions on resources in the project. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>serviceAccount</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ServiceAccount is the name of the service account bound as a subject. Immutable. Deprecated.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>userName</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>UserName is the name of the user subject added to the project. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>userPrincipalName</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>UserPrincipalName is the name of the user principal subject added to the project. Immutable.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_cattle_management_v3_projectroletemplatebindinglist"><a class="anchor" href="#_io_cattle_management_v3_projectroletemplatebindinglist"></a>io.cattle.management.v3.ProjectRoleTemplateBindingList</h3>
+<div class="paragraph">
+<p>ProjectRoleTemplateBindingList is a list of ProjectRoleTemplateBinding</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>items</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>List of projectroletemplatebindings. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; <a href="#_io_cattle_management_v3_projectroletemplatebinding">io.cattle.management.v3.ProjectRoleTemplateBinding</a> &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>metadata</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Standard list metadata. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_listmeta">io.k8s.apimachinery.pkg.apis.meta.v1.ListMeta</a></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_cattle_management_v3_roletemplate"><a class="anchor" href="#_io_cattle_management_v3_roletemplate"></a>io.cattle.management.v3.RoleTemplate</h3>
+<div class="paragraph">
+<p>RoleTemplate holds configuration for a template that is used to create kubernetes Roles and ClusterRoles (in the rbac.authorization.k8s.io group) for a cluster or project.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>administrative</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Administrative if false, and context is set to cluster this RoleTemplate will not grant access to "CatalogTemplates" and "CatalogTemplateVersions" for any project in the cluster. Default is false.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>boolean</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>builtin</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Builtin if true specifies that this RoleTemplate was created by Rancher and is immutable. Default to false.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>boolean</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>clusterCreatorDefault</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ClusterCreatorDefault if true, a binding with this RoleTemplate will be created for a users when they create a new cluster. ClusterCreatorDefault is only evaluated if the context of the RoleTemplate is set to cluster. Default to false.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>boolean</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>context</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Context describes if the roleTemplate applies to clusters or projects. Valid values are "project", "cluster" or &quot;&quot;.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>enum (project, cluster, )</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>description</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Description holds text that describes the resource.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>displayName</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>DisplayName is the human-readable name displayed in the UI for this resource.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>external</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>External if true specifies that rules for this RoleTemplate should be gathered from a ClusterRole with the matching name. If set to true the Rules on the template will not be evaluated. External&#8217;s value is only evaluated if the RoleTemplate&#8217;s context is set to "cluster" Default to false.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>boolean</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>hidden</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Hidden if true informs the Rancher UI not to display this RoleTemplate. Default to false.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>boolean</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>locked</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Locked if true, new bindings will not be able to use this RoleTemplate. Default to false.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>boolean</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>metadata</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Standard object&#8217;s metadata. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_objectmeta">io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>projectCreatorDefault</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ProjectCreatorDefault if true, a binding with this RoleTemplate will be created for a user when they create a new project. ProjectCreatorDefault is only evaluated if the context of the RoleTemplate is set to project. Default to false.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>boolean</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>roleTemplateNames</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>RoleTemplateNames list of RoleTemplate names that this RoleTemplate will inherit. This RoleTemplate will grant all rules defined in an inherited RoleTemplate. Inherited RoleTemplates must already exist.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>rules</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Rules hold all the PolicyRules for this RoleTemplate.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; <a href="#_io_cattle_management_v3_roletemplate_rules">rules</a> &gt; array</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div id="_io_cattle_management_v3_roletemplate_rules" class="paragraph">
+<p><strong>rules</strong></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiGroups</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIGroups is the name of the APIGroup that contains the resources. If multiple API groups are specified, any action requested against one of the enumerated resources in any API group will be allowed. &quot;" represents the core API group and "*&quot; represents all API groups.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>nonResourceURLs</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>NonResourceURLs is a set of partial urls that a user should have access to. *s are allowed, but only as the full, final step in the path Since non-resource URLs are not namespaced, this field is only applicable for ClusterRoles referenced from a ClusterRoleBinding. Rules can either apply to API resources (such as "pods" or "secrets") or non-resource URL paths (such as "/api"), but not both.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>resourceNames</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ResourceNames is an optional white list of names that the rule applies to. An empty set means that everything is allowed.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>resources</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Resources is a list of resources this rule applies to. '*' represents all resources.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>verbs</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Verbs is a list of Verbs that apply to ALL the ResourceKinds contained in this rule. '*' represents all verbs.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string &gt; array</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_cattle_management_v3_roletemplatelist"><a class="anchor" href="#_io_cattle_management_v3_roletemplatelist"></a>io.cattle.management.v3.RoleTemplateList</h3>
+<div class="paragraph">
+<p>RoleTemplateList is a list of RoleTemplate</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>items</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>List of roletemplates. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; <a href="#_io_cattle_management_v3_roletemplate">io.cattle.management.v3.RoleTemplate</a> &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>metadata</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Standard list metadata. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_listmeta">io.k8s.apimachinery.pkg.apis.meta.v1.ListMeta</a></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_k8s_apimachinery_pkg_apis_meta_v1_deleteoptions"><a class="anchor" href="#_io_k8s_apimachinery_pkg_apis_meta_v1_deleteoptions"></a>io.k8s.apimachinery.pkg.apis.meta.v1.DeleteOptions</h3>
+<div class="paragraph">
+<p>DeleteOptions may be provided when deleting an API object.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>dryRun</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>When present, indicates that modifications should not be persisted. An invalid or unrecognized dryRun directive will result in an error response and no further processing of the request. Valid values are: - All: all dry run stages will be processed</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>gracePeriodSeconds</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>The duration in seconds before the object should be deleted. Value must be non-negative integer. The value zero indicates delete immediately. If this value is nil, the default grace period for the specified type will be used. Defaults to a per object value if not specified. zero means delete immediately.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>integer (int64)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>orphanDependents</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Deprecated: please use the PropagationPolicy, this field will be deprecated in 1.7. Should the dependent objects be orphaned. If true/false, the "orphan" finalizer will be added to/removed from the object&#8217;s finalizers list. Either this field or PropagationPolicy may be set, but not both.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>boolean</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>preconditions</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Must be fulfilled before a deletion is carried out. If not possible, a 409 Conflict status will be returned.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_preconditions">io.k8s.apimachinery.pkg.apis.meta.v1.Preconditions</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>propagationPolicy</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Whether and how garbage collection will be performed. Either this field or OrphanDependents may be set, but not both. The default policy is decided by the existing finalizer set in the metadata.finalizers and the resource-specific default policy. Acceptable values are: 'Orphan' - orphan the dependents; 'Background' - allow the garbage collector to delete the dependents in the background; 'Foreground' - a cascading policy that deletes all dependents in the foreground.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_k8s_apimachinery_pkg_apis_meta_v1_fieldsv1"><a class="anchor" href="#_io_k8s_apimachinery_pkg_apis_meta_v1_fieldsv1"></a>io.k8s.apimachinery.pkg.apis.meta.v1.FieldsV1</h3>
+<div class="paragraph">
+<p>FieldsV1 stores a set of fields in a data structure like a Trie, in JSON format.</p>
+</div>
+<div class="paragraph">
+<p>Each key is either a '.' representing the field itself, and will always map to an empty set, or a string representing a sub-field or item. The string will follow one of these four formats: 'f:&lt;name&gt;', where &lt;name&gt; is the name of a field in a struct, or key in a map 'v:&lt;value&gt;', where &lt;value&gt; is the exact json formatted value of a list item 'i:&lt;index&gt;', where &lt;index&gt; is position of a item in a list 'k:&lt;keys&gt;', where &lt;keys&gt; is a map of a list item&#8217;s key fields to their unique values If a key maps to an empty Fields value, the field that key represents is part of the set.</p>
+</div>
+<div class="paragraph">
+<p>The exact format is defined in sigs.k8s.io/structured-merge-diff</p>
+</div>
+<div class="paragraph">
+<p><em>Type</em> : object</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_io_k8s_apimachinery_pkg_apis_meta_v1_listmeta"><a class="anchor" href="#_io_k8s_apimachinery_pkg_apis_meta_v1_listmeta"></a>io.k8s.apimachinery.pkg.apis.meta.v1.ListMeta</h3>
+<div class="paragraph">
+<p>ListMeta describes metadata that synthetic resources must have, including lists and various status objects. A resource may have only one of {ObjectMeta, ListMeta}.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>continue</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>continue may be set if the user set a limit on the number of items returned, and indicates that the server has more data available. The value is opaque and may be used to issue another request to the endpoint that served this list to retrieve the next set of available objects. Continuing a consistent list may not be possible if the server configuration has changed or more than a few minutes have passed. The resourceVersion field returned when using this continue value will be identical to the value in the first response, unless you have received this token from an error message.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>remainingItemCount</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>remainingItemCount is the number of subsequent items in the list which are not included in this list response. If the list request contained label or field selectors, then the number of remaining items is unknown and the field will be left unset and omitted during serialization. If the list is complete (either because it is not chunking or because this is the last chunk), then there are no more remaining items and this field will be left unset and omitted during serialization. Servers older than v1.15 do not set this field. The intended use of the remainingItemCount is <em>estimating</em> the size of a collection. Clients should not rely on the remainingItemCount to be set or to be exact.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>integer (int64)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>resourceVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>String that identifies the server&#8217;s internal version of this object that can be used by clients to determine when objects have changed. Value must be treated as opaque by clients and passed unmodified back to the server. Populated by the system. Read-only. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>selfLink</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Deprecated: selfLink is a legacy read-only field that is no longer populated by the system.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_k8s_apimachinery_pkg_apis_meta_v1_managedfieldsentry"><a class="anchor" href="#_io_k8s_apimachinery_pkg_apis_meta_v1_managedfieldsentry"></a>io.k8s.apimachinery.pkg.apis.meta.v1.ManagedFieldsEntry</h3>
+<div class="paragraph">
+<p>ManagedFieldsEntry is a workflow-id, a FieldSet and the group version of the resource that the fieldset applies to.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the version of this resource that this field set applies to. The format is "group/version" just like the top-level APIVersion field. It is necessary to track the version of a field set because it cannot be automatically converted.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>fieldsType</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>FieldsType is the discriminator for the different fields format and version. There is currently only one possible value: "FieldsV1"</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>fieldsV1</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>FieldsV1 holds the first JSON version format as described in the "FieldsV1" type.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_fieldsv1">io.k8s.apimachinery.pkg.apis.meta.v1.FieldsV1</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>manager</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Manager is an identifier of the workflow managing these fields.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>operation</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Operation is the type of operation which lead to this ManagedFieldsEntry being created. The only valid values for this field are 'Apply' and 'Update'.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>subresource</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Subresource is the name of the subresource used to update that object, or empty string if the object was updated through the main resource. The value of this field is used to distinguish between managers, even if they share the same name. For example, a status update will be distinct from a regular update using the same manager name. Note that the APIVersion field is not related to the Subresource field and it always corresponds to the version of the main resource.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>time</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Time is the timestamp of when the ManagedFields entry was added. The timestamp will also be updated if a field is added, the manager changes any of the owned fields value or removes a field. The timestamp does not update when a field is removed from the entry because another manager took it over.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_time">io.k8s.apimachinery.pkg.apis.meta.v1.Time</a></p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_k8s_apimachinery_pkg_apis_meta_v1_objectmeta"><a class="anchor" href="#_io_k8s_apimachinery_pkg_apis_meta_v1_objectmeta"></a>io.k8s.apimachinery.pkg.apis.meta.v1.ObjectMeta</h3>
+<div class="paragraph">
+<p>ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>annotations</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations" class="bare">https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string, string &gt; map</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>creationTimestamp</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>CreationTimestamp is a timestamp representing the server time when this object was created. It is not guaranteed to be set in happens-before order across separate operations. Clients may not set this value. It is represented in RFC3339 form and is in UTC.</p>
+</div>
+<div class="paragraph">
+<p>Populated by the system. Read-only. Null for lists. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_time">io.k8s.apimachinery.pkg.apis.meta.v1.Time</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>deletionGracePeriodSeconds</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>integer (int64)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>deletionTimestamp</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>DeletionTimestamp is RFC 3339 date and time at which this resource will be deleted. This field is set by the server when a graceful deletion is requested by the user, and is not directly settable by a client. The resource is expected to be deleted (no longer visible from resource lists, and not reachable by name) after the time in this field, once the finalizers list is empty. As long as the finalizers list contains items, deletion is blocked. Once the deletionTimestamp is set, this value may not be unset or be set further into the future, although it may be shortened or the resource may be deleted prior to this time. For example, a user may request that a pod is deleted in 30 seconds. The Kubelet will react by sending a graceful termination signal to the containers in the pod. After that 30 seconds, the Kubelet will send a hard termination signal (SIGKILL) to the container and after cleanup, remove the pod from the API. In the presence of network partitions, this object may still exist after this timestamp, until an administrator or automated process can determine the resource is fully terminated. If not set, graceful deletion of the object has not been requested.</p>
+</div>
+<div class="paragraph">
+<p>Populated by the system when a graceful deletion is requested. Read-only. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_time">io.k8s.apimachinery.pkg.apis.meta.v1.Time</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>finalizers</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order. Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>generateName</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.</p>
+</div>
+<div class="paragraph">
+<p>If this field is specified and the generated name exists, the server will return a 409.</p>
+</div>
+<div class="paragraph">
+<p>Applied only if Name is not specified. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>generation</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>integer (int64)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>labels</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels" class="bare">https://kubernetes.io/docs/concepts/overview/working-with-objects/labels</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; string, string &gt; map</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>managedFields</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn&#8217;t need to set or understand this field. A workflow can be the user&#8217;s name, a controller&#8217;s name, or the name of a specific apply path like "ci-cd". The set of fields is always in the version that the workflow used when modifying the object.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; <a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_managedfieldsentry">io.k8s.apimachinery.pkg.apis.meta.v1.ManagedFieldsEntry</a> &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>name</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names" class="bare">https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>namespace</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the "default" namespace, but "default" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.</p>
+</div>
+<div class="paragraph">
+<p>Must be a DNS_LABEL. Cannot be updated. More info: <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces" class="bare">https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>ownerReferences</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; <a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_ownerreference">io.k8s.apimachinery.pkg.apis.meta.v1.OwnerReference</a> &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>resourceVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.</p>
+</div>
+<div class="paragraph">
+<p>Populated by the system. Read-only. Value must be treated as opaque by clients and . More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>selfLink</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Deprecated: selfLink is a legacy read-only field that is no longer populated by the system.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>uid</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.</p>
+</div>
+<div class="paragraph">
+<p>Populated by the system. Read-only. More info: <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids" class="bare">https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_k8s_apimachinery_pkg_apis_meta_v1_ownerreference"><a class="anchor" href="#_io_k8s_apimachinery_pkg_apis_meta_v1_ownerreference"></a>io.k8s.apimachinery.pkg.apis.meta.v1.OwnerReference</h3>
+<div class="paragraph">
+<p>OwnerReference contains enough information to let you identify an owning object. An owning object must be in the same namespace as the dependent, or be cluster-scoped, so there is no namespace field.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>API version of the referent.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>blockOwnerDeletion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>If true, AND if the owner has the "foregroundDeletion" finalizer, then the owner cannot be deleted from the key-value store until this reference is removed. See <a href="https://kubernetes.io/docs/concepts/architecture/garbage-collection/#foreground-deletion" class="bare">https://kubernetes.io/docs/concepts/architecture/garbage-collection/#foreground-deletion</a> for how the garbage collector interacts with this field and enforces the foreground deletion. Defaults to false. To set this field, a user needs "delete" permission of the owner, otherwise 422 (Unprocessable Entity) will be returned.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>boolean</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>controller</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>If true, this reference points to the managing controller.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>boolean</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind of the referent. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>name</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Name of the referent. More info: <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names" class="bare">https://kubernetes.io/docs/concepts/overview/working-with-objects/names#names</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>uid</strong><br>
+<em>required</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>UID of the referent. More info: <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids" class="bare">https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_k8s_apimachinery_pkg_apis_meta_v1_patch"><a class="anchor" href="#_io_k8s_apimachinery_pkg_apis_meta_v1_patch"></a>io.k8s.apimachinery.pkg.apis.meta.v1.Patch</h3>
+<div class="paragraph">
+<p>Patch is provided to give a concrete name and type to the Kubernetes PATCH request body.</p>
+</div>
+<div class="paragraph">
+<p><em>Type</em> : object</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_io_k8s_apimachinery_pkg_apis_meta_v1_preconditions"><a class="anchor" href="#_io_k8s_apimachinery_pkg_apis_meta_v1_preconditions"></a>io.k8s.apimachinery.pkg.apis.meta.v1.Preconditions</h3>
+<div class="paragraph">
+<p>Preconditions must be fulfilled before an operation (update, delete, etc.) is carried out.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>resourceVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Specifies the target ResourceVersion</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>uid</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Specifies the target UID.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_k8s_apimachinery_pkg_apis_meta_v1_status"><a class="anchor" href="#_io_k8s_apimachinery_pkg_apis_meta_v1_status"></a>io.k8s.apimachinery.pkg.apis.meta.v1.Status</h3>
+<div class="paragraph">
+<p>Status is a return value for calls that don&#8217;t return other objects.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>apiVersion</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>code</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Suggested HTTP return code for this status, 0 if not set.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>integer (int32)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>details</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Extended data associated with the reason. Each reason may define its own extended details. This field is optional and the data returned is not guaranteed to conform to any schema except that defined by the reason type.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_statusdetails">io.k8s.apimachinery.pkg.apis.meta.v1.StatusDetails</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>message</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>A human-readable description of the status of this operation.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>metadata</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Standard list metadata. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_listmeta">io.k8s.apimachinery.pkg.apis.meta.v1.ListMeta</a></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>reason</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>A machine-readable description of why this operation is in the "Failure" status. If this value is empty there is no information available. A Reason clarifies an HTTP status code but does not override it.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>status</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>Status of the operation. One of: "Success" or "Failure". More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_k8s_apimachinery_pkg_apis_meta_v1_statuscause"><a class="anchor" href="#_io_k8s_apimachinery_pkg_apis_meta_v1_statuscause"></a>io.k8s.apimachinery.pkg.apis.meta.v1.StatusCause</h3>
+<div class="paragraph">
+<p>StatusCause provides more information about an api.Status failure, including cases when multiple errors are encountered.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>field</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>The field of the resource that has caused this error, as named by its JSON serialization. May include dot and postfix notation for nested attributes. Arrays are zero-indexed. Fields may appear more than once in an array of causes due to fields having multiple errors. Optional.</p>
+</div>
+<div class="paragraph">
+<p>Examples:
+ "name" - the field "name" on the current resource
+ "items[0].name" - the field "name" on the first array entry in "items"</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>message</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>A human-readable description of the cause of the error. This field may be presented as-is to a reader.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>reason</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>A machine-readable description of the cause of the error. If this value is empty there is no information available.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_k8s_apimachinery_pkg_apis_meta_v1_statusdetails"><a class="anchor" href="#_io_k8s_apimachinery_pkg_apis_meta_v1_statusdetails"></a>io.k8s.apimachinery.pkg.apis.meta.v1.StatusDetails</h3>
+<div class="paragraph">
+<p>StatusDetails is a set of additional properties that MAY be set by the server to provide additional information about a response. The Reason field of a Status object defines what attributes will be set. Clients must ignore fields that do not match the defined type of each attribute, and should assume that any attribute may be empty, invalid, or under defined.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 61.1111%;">
+<col style="width: 22.2223%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-middle">Name</th>
+<th class="tableblock halign-left valign-middle">Description</th>
+<th class="tableblock halign-left valign-middle">Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>causes</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>&lt; <a href="#_io_k8s_apimachinery_pkg_apis_meta_v1_statuscause">io.k8s.apimachinery.pkg.apis.meta.v1.StatusCause</a> &gt; array</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>group</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>The group attribute of the resource associated with the status StatusReason.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>kind</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>The kind attribute of the resource associated with the status StatusReason. On some operations may differ from the requested resource Kind. More info: <a href="https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds" class="bare">https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>name</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>The name attribute of the resource associated with the status StatusReason (when there is a single name which can be described).</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>retryAfterSeconds</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>If specified, the time in seconds before the operation should be retried. Some errors may indicate the client must take an alternate action - for those errors this field may indicate how long to wait before taking the alternate action.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>integer (int32)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p><strong>uid</strong><br>
+<em>optional</em></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>UID of the resource. (when there is a single resource which can be described). More info: <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids" class="bare">https://kubernetes.io/docs/concepts/overview/working-with-objects/names#uids</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-middle"><div class="content"><div class="paragraph">
+<p>string</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_io_k8s_apimachinery_pkg_apis_meta_v1_time"><a class="anchor" href="#_io_k8s_apimachinery_pkg_apis_meta_v1_time"></a>io.k8s.apimachinery.pkg.apis.meta.v1.Time</h3>
+<div class="paragraph">
+<p>Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON. Wrappers are provided for many of the factory methods that the time package offers.</p>
+</div>
+<div class="paragraph">
+<p><em>Type</em> : string (date-time)</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../_/js/site.js" data-ui-root-path="../_"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

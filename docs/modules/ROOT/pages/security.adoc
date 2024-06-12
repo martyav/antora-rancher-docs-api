@@ -1,0 +1,15 @@
+
+[[_securityscheme]]
+== Security
+
+[[_bearertoken]]
+=== BearerToken
+Bearer Token authentication
+
+[%hardbreaks]
+__Type__ : apiKey
+__Name__ : authorization
+__In__ : HEADER
+
+
+

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Welcome to this example :: Antora OpenAPI Example</title>
+    <title>Untitled :: Antora Swagger2Markup Example</title>
     <meta name="generator" content="Antora 3.1.7">
 <link rel="stylesheet" href="../_/css/site.css">
 <link rel="stylesheet" href="../_/css/style.css">  </head>
@@ -11,7 +11,7 @@
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <a class="navbar-item" href="..">Antora OpenAPI Example</a>
+      <a class="navbar-item" href="..">Antora Swagger2Markup Example</a>
       <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
         <span></span>
         <span></span>
@@ -47,30 +47,33 @@
   </nav>
 </header>
 <div class="body">
-<div class="nav-container" data-component="antora-openapi-example" data-version="master">
+<div class="nav-container" data-component="antora-swagger2markup-example" data-version="master">
   <aside class="nav">
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
     <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
-    <h3 class="title"><a href="index.html">Openapi Example</a></h3>
+    <h3 class="title"><a href="index.html">Swagger2Markup Example</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
-  <li class="nav-item is-current-page" data-depth="1">
+  <li class="nav-item" data-depth="1">
     <a class="nav-link" href="index.html">Welcome</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="definitions.html">definitions</a>
+    <a class="nav-link" href="overview.html">Overview</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="paths.html">paths</a>
+    <a class="nav-link" href="definitions.html">Definitions</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="overview.html">overview</a>
+    <a class="nav-link" href="paths.html">Paths</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="security.html">Security</a>
   </li>
   <li class="nav-item" data-depth="1">
-    <a class="nav-link" href="security.html">security</a>
+    <a class="nav-link" href="combined-api-pages.html">Combined API Pages</a>
   </li>
 </ul>
   </li>
@@ -79,12 +82,12 @@
 </div>
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
-    <span class="title">Openapi Example</span>
+    <span class="title">Swagger2Markup Example</span>
     <span class="version">master</span>
   </div>
   <ul class="components">
     <li class="component is-current">
-      <div class="title"><a href="index.html">Openapi Example</a></div>
+      <div class="title"><a href="index.html">Swagger2Markup Example</a></div>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="index.html">master</a>
@@ -99,36 +102,35 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="index.html" class="home-link is-current"></a>
+  <a href="index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="index.html">Openapi Example</a></li>
-    <li><a href="index.html">Welcome</a></li>
+    <li><a href="index.html">Swagger2Markup Example</a></li>
+    <li><a href="security.html">Security</a></li>
   </ul>
 </nav>
-<div class="edit-this-page"><a href="file:///Users/ssingh/Features/Rancher/current/antora-rancher-docs-api/docs/modules/ROOT/pages/index.adoc">Edit this Page</a></div>
+<div class="edit-this-page"><a href="file:///Users/ssingh/Features/Rancher/current/antora-rancher-docs-api/docs/modules/ROOT/pages/security.adoc">Edit this Page</a></div>
 </div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Welcome to this example</h1>
+<div class="sect1">
+<h2 id="_securityscheme"><a class="anchor" href="#_securityscheme"></a>Security</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_bearertoken"><a class="anchor" href="#_bearertoken"></a>BearerToken</h3>
 <div class="paragraph">
-<p>The openapi sources comes from <a href="https://github.com/OAI/OpenAPI-Specification/tree/main/examples/v3.0" class="bare">https://github.com/OAI/OpenAPI-Specification/tree/main/examples/v3.0</a>.</p>
+<p>Bearer Token authentication</p>
 </div>
 <div class="paragraph">
-<p>Select an api to display:</p>
+<p><em>Type</em> : apiKey<br>
+<em>Name</em> : authorization<br>
+<em>In</em> : HEADER</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="api-with-examples.html" class="xref page">api-with-examples</a></p>
-</li>
-<li>
-<p><a href="petstore.html" class="xref page">petstore</a></p>
-</li>
-</ul>
+</div>
+</div>
 </div>
 </article>
   </div>
