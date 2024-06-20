@@ -1,7 +1,4 @@
 * xref:index.adoc[Welcome]
-.Swagger2Markup Examples
-* xref:overview.adoc[Overview]
-* xref:definitions.adoc[Definitions]
-* xref:paths.adoc[Paths]
-* xref:security.adoc[Security]
-* xref:combined-api-pages.adoc[Combined API Pages]
+.OpenAPI Examples
+* xref:rancher-api.adoc[Rancher API]
+* xref:api-with-examples.adoc[OpenAPI v3 Example]

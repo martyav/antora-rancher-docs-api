@@ -1,6 +1,6 @@
 site:
-  title: Antora Swagger2Markup Example
-  start_page: antora-swagger2markup-example::index.adoc
+  title: Antora OpenAPI Example
+  start_page: antora-openapi-example::index.adoc
 content:
   sources:
     - url: .
@@ -11,3 +11,4 @@ ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
     snapshot: true
+  supplemental_files: .supplemental-ui

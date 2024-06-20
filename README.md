@@ -1,3 +1,3 @@
 This repo is to experiment with the Antora/OpenAPI/Swagger2Markup examples for converting Rancher's API documentation.
 
-Main branch is only Swagger2Markup and can be tested locally with `antora --fetch antora-playbook.yml`
+Command to run using Docker: `docker run --rm -it -p 8080:8080 arjsin/antora-openapi-example`
