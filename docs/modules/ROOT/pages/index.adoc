@@ -1,12 +1,4 @@
 # Welcome to this example
 
-Select a section to display after `swagger2markup` converter has been applied to the `rancher-api.yaml` file:
-
-- xref:overview.adoc[Overview]
-- xref:definitions.adoc[Definitions]
-- xref:paths.adoc[Paths]
-- xref:security.adoc[Security]
-
-Below represents the combination of the above generated API files:
-
-- xref:combined-api-pages.adoc[Combined API Pages]
+- xref:rancher-api.adoc[Rancher API]
+- xref:api-with-examples.adoc[OpenAPI v3 Example]

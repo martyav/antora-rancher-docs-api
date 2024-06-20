@@ -1,5 +1,5 @@
-name: antora-swagger2markup-example
-title: Swagger2Markup Example
+name: antora-openapi-example
+title: OpenAPI Example
 version: master
 nav:
   - modules/ROOT/nav.adoc
