@@ -2,3 +2,4 @@
 
 - xref:rancher-api.adoc[Rancher API]
 - xref:api-with-examples.adoc[OpenAPI v3 Example]
+- xref:harvester-api.adoc[Harvester API]
